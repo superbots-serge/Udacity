@@ -26,7 +26,7 @@ var education = {
       'title': 'Intro to Programming Nanodegree Program',
       'school': 'Udacity',
       'dates': '2017-Current',
-      'url': "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001?v=fe1&v=fe1"
+      'url': "https://www.udacity.com/"
    }]
 };
 var work = {
