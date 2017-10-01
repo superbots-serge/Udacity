@@ -1,258 +1,265 @@
 
-/******************************************************************************
-*Bio Section of the resume
-******************************************************************************/
 var bio = {
-    "name": "Sergio Velasco",
-    "role": "NINJA",
-    "contacts": {
-        "mobile": "xxx-xx-xxx",
-        "email": "sv1229@att.com",
-        "github": "xxxxxx",
-        "twitter": "TBD",
-        "location": "Los Angeles, CA"
-    },
-    "welcomeMessage": "Lorem Ipsum is simply dummy text of the printing" +
-                      "and typesetting industry",
-    /*changed the picture name to bioPic per feedback*/
-    "bioPic": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAJTAAAAJGJkMWY2ODJjLWFkMWYtNDkwYS04MjY2LTQ0ZGMwYTAyYTMwNA.jpg",
-    "skills": ["Break Software", "Go unoticed", "work in the shadows like" +
-               " a real ninja","Engineer","Exec in the making"]
+   'name': 'Sergio Velasco',
+   'role': 'NINJA',
+   'welcomeMessage': 'Knowledge is Power!',
+   'biopic': 'https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAJTAAAAJGJkMWY2ODJjLWFkMWYtNDkwYS04MjY2LTQ0ZGMwYTAyYTMwNA.jpg',
+   'contacts': {
+      'mobile': 'XXX-XXX-XXXX',
+      'email': 'sv1229@att.com',
+      'github': 'superbots-serge',
+      'twitter': 'TBD',
+      'location': 'Los Angeles, CA',
+   },
+   'skills': ['Breaking Software', 'Being a Ninja', 'Engineer', 'Gamer']
 };
-/******************************************************************************
-*Work Section of the resume
-******************************************************************************/
-var work = {
-    "jobs": [{
-            "employer": "DIRECTV",
-            "title": "Sr. Software Engineer",
-            "location": "El Segundo",
-            "dates": "In Progress",
-            "description":"Use Big Data technologies like New Relic, "+
-                          "Conviva, Omniture and apteligent to monitor system/"+
-                          "app performance in production."
-        }, {
-            "employer": "Electronic Arts",
-            "title": "Global Project Manager",
-            "location": "Playa Vista, CA",
-            "dates": "2007-2009",
-            "description": "Managing testing effort for various high profile"+
-                           "franchises across the EA Mobile organization in LA,"+
-                           "RO, HYD, & MTL. I was part of a small team of SME"+
-                           "that help stay up department stay up to date with"+
-                           "Agile QA methodologies and various iOS and Android"+
-                           "tools. Got opportunity to coordinate QA managers"+
-                           "across all mobile studios to bring together a "+
-                           "multi-functional team of 100+ QA team members to"+
-                           " test The Simpsons Tapped Out."
-        }, {
-            "employer": "JAMDAT Mobile",
-            "title": "QA Analyst",
-            "location": "Culver City, CA",
-            "dates": "2005-2006",
-            "description": "Performed localization testing on all content to"+
-                           "ensure that linguistic quality adheres to the"+
-                           "company's standards and guidelines. Work closely"+
-                           "with Production and Engineering teams to evaluate"+
-                           "testability of new features/implementations."+
-                           " Tested well known J2ME & BREW games like Tetris,"+
-                           " Bejeweled, Doom RPG and many others."
-        }]
-};
-/******************************************************************************
-*Education Section of the resume
-******************************************************************************/
 var education = {
-    "schools": [{
-        "name": "Westwood College",
-        "location": "Los Angeles, CA",
-        "major": "Game Software Development",
-        "dates": "2006-2009",
-        "url": "na"
-    },],
-    "onlineCourses": [{
-        "title": "Intro to Programming Nanodegree Program",
-        "school": "Udacity",
-        "dates": "2017-current",
-        "url": "https://www.udacity.com/"
-    }, {
-        "title": "Strategic Leadership and Managemen",
-        "school": "University of Illinois at Urbana-Champaign",
-        "dates": "2017-current",
-        "url": "https://www.coursera.org/learn/managing-organization/home/welcome"
-    }]
+   'schools': [{
+      'name': 'Westwood College',
+      'degree': 'BS',
+      'dates': '2009',
+      'location': 'Los Angeles',
+      'majors': ['Game Software Development'],
+      'url': 'N/A'
+   },],
+   'onlineCourses': [{
+      'title': 'Intro to Programming Nanodegree Program',
+      'school': 'Udacity',
+      'dates': '2017-Current',
+      'url': "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001?v=fe1&v=fe1"
+   }]
 };
-/******************************************************************************
-* List of Projects to display in the resume
-******************************************************************************/
+var work = {
+   'jobs': [{
+      'employer': 'DIRECTV - AT&T',
+      'title': 'Sr.Software Engineer',
+      'location': 'El Segundo, CA',
+      'dates': '2012 - Present',
+      'description': 'Use Big Data technologies like New Relic, Conviva, Omniture and apteligent to monitor system / app performance in production.'
+   }, {
+      'employer': 'Electronic Arts - EA',
+      'title': 'Global Project Manager',
+      'location': 'Playa Vista, CA',
+      'dates': '2007-2010',
+      'description': 'Managing testing effort for various high profile franchises across the EA Mobile organization in LA, RO, HYD, & MTL. I was part of a small team of SME that help stay up department stay up to date with Agile QA methodologies and various iOS and Android tools. Got opportunity to coordinate QA managers across all mobile studios to bring together a multi-functional team of 100+ QA team members to test The Simpsons Tapped Out.'
+   }, {
+      'employer': 'JAMDAT Mobile Inc.',
+      'title': 'QA Analyst',
+      'location': 'Culver City, CA',
+      'dates': '2005 - 2006',
+      'description': 'well known J2ME & BREW games like Tetris, Bejeweled, Doom RPG and many others.'
+   }]
+};
 var projects = {
-    "project": [ {
-            "title": "Simpsons Tapped Out",
-            "dates": 2009,
-            "description": "Manager",
-            "images": ["https://vignette.wikia.nocookie.net/simpsons/images/8/89/The_Simpsons_Tapped_Out.jpg/revision/latest/scale-to-width-down/350?cb=20150720220902", "http://static.adweek.com/adweek.com-prod/wp-content/uploads/sites/2/2015/06/The-Simpsons-Tapped-Out-Tap-Ball.png"]
-        }]
+   'projects': [{
+      'title': 'The Simpsons',
+      'dates': '2009-2010',
+      'description': "Great Game, Great project to manage!",
+      'images': ['https://vignette.wikia.nocookie.net/simpsons/images/8/89/The_Simpsons_Tapped_Out.jpg/revision/latest/scale-to-width-down/350?cb=20150720220902", "http://static.adweek.com/adweek.com-prod/wp-content/uploads/sites/2/2015/06/The-Simpsons-Tapped-Out-Tap-Ball.pngf']
+   }]
 };
 
 /******************************************************************************
-* Display function for bio
+* Display function for the Bio
 ******************************************************************************/
-bio.display = function (){
-var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-$("#header").prepend(formattedRole);
+bio.display = function () {
+   var formattedName = HTMLheaderName.replace('%data%',
+                                              bio.name);
+   var formattedRole = HTMLheaderRole.replace('%data%',
+                                              bio.role);
 
-var formattedName = HTMLheaderName.replace("%data%", bio.name);
-$("#header").prepend(formattedName);
+   var formattedNameRole = formattedName + formattedRole;
 
-var formattedpic = HTMLbioPic.replace("%data%", bio.bioPic);
-$("#header").append(formattedpic);
+   var formattedMobile = HTMLmobile.replace('%data%',
+                                            bio.contacts.mobile);
+   var formattedEmail = HTMLemail.replace('%data%',
+                                          bio.contacts.email);
+   var formattedTwitter = HTMLtwitter.replace('%data%',
+                                              bio.contacts.twitter);
+   var formattedGithub = HTMLgithub.replace('%data%',
+                                            bio.contacts.github);
+   var formattedLocation = HTMLlocation.replace('%data%',
+                                                bio.contacts.location);
 
-var formattedmobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
-$("#topContacts").append(formattedmobile);
+   var formattedbiopic = HTMLbioPic.replace('%data%',
+                                            bio.biopic);
 
-var formattedemail = HTMLemail.replace("%data%", bio.contacts.email);
-$("#topContacts").append(formattedemail);
+   var formattedWelcomeMsg = HTMLwelcomeMsg.replace(
+      '%data%', bio.welcomeMessage);
 
-var formattedtwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
-$("#topContacts").append(formattedtwitter);
+   $("#header").prepend(formattedNameRole);
+   $("#header").append(formattedbiopic, formattedWelcomeMsg);
 
-var formattedgithub = HTMLgithub.replace("%data%", bio.contacts.github);
-$("#topContacts").append(formattedgithub);
+   $("#topContacts").append(formattedMobile,
+                            formattedEmail,
+                            formattedTwitter,
+                            formattedGithub,
+                            formattedLocation);
 
-var formattedlocation = HTMLlocation.replace("%data%", bio.contacts.location);
-$("#topContacts").append(formattedlocation);
+   if (bio.skills.length > 0) {
+      $('#header').append(HTMLskillsStart);
+      bio.skills.forEach(function (skill) {
+         var formattedBioSkills = HTMLskills.replace('%data%', skill);
+         $('#skills').append(formattedBioSkills);
+      });
+   }
 
-if (bio.skills.length > 0) {
-    $("#header").append(HTMLskillsStart);
-
-    var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]);
-    $("#skills").append(formattedSkill);
-
-    formattedSkill = HTMLskills.replace("%data%", bio.skills[1]);
-    $("#skills").append(formattedSkill);
-
-    formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);
-    $("#skills").append(formattedSkill);
-
-    formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
-    $("#skills").append(formattedSkill);
-
-    formattedSkill = HTMLskills.replace("%data%", bio.skills[4]);
-    $("#skills").append(formattedSkill);
-  }
+   $('#footerContacts').append(formattedMobile,
+                            formattedEmail,
+                            formattedTwitter,
+                            formattedGithub,
+                            formattedLocation);
 };
+
+/******************************************************************************
+* Display function for College education
+******************************************************************************/
+education.display = function () {
+   // start education entries.
+   $("#education").append(HTMLschoolStart);
+
+   education.schools.forEach(function (school) {
+      var formattedSchoolName = HTMLschoolName.replace('%data%',
+                                                       school.name);
+      var formattedSchoolDegree = HTMLschoolDegree.replace('%data%',
+                                                           school.degree);
+
+      var formattedSchoolNameDegree = formattedSchoolName + formattedSchoolDegree;
+
+      var formattedSchoolUrl = formattedSchoolNameDegree.replace("#",
+                                                                school.url);
+      var formattedSchoolDates = HTMLschoolDates.replace('%data%',
+                                                         school.dates);
+
+      var formattedSchoolLocation = HTMLschoolLocation.replace('%data%',
+                                                               school.location);
+
+      $('.education-entry:last').append(formattedSchoolUrl,
+                                        formattedSchoolDates,
+                                        formattedSchoolLocation);
+
+      if (school.majors.length > 0) {
+         $('#education').append(HTMLschoolStart);
+         school.majors.forEach(function (major) {
+               var formattedSchoolMajors = HTMLschoolMajor.replace('%data%',
+                                                                   major);
+
+               $('.education-entry:last').append(formattedSchoolMajors);
+            });
+      }
+
+   });
 
 bio.display();
 
 /******************************************************************************
-* Display function for work
+* Display function for Online education
 ******************************************************************************/
-function displayWork() {
-    for (i in work.jobs) {
-        $("#workExperience").append(HTMLworkStart);
-        var formattedEmployer = HTMLworkEmployer.replace("%data%",
-                                  work.jobs[i].employer);
-        var formattedTitle = HTMLworkTitle.replace("%data%",
-                                  work.jobs[i].title);
-        var formattedEmployerTitle = formattedEmployer + " " + formattedTitle;
-        $(".work-entry:last").append(formattedEmployerTitle);
-        var formattedLocation = HTMLworkLocation.replace("%data%",
-                                  work.jobs[i].location);
-        var formattedDates = HTMLworkDates.replace("%data%",
-                                  work.jobs[i].dates);
-        var formattedDescription = HTMLworkDescription.replace("%data%",
-                                  work.jobs[i].description);
-        $(".work-entry:last").append(formattedLocation, formattedDates,
-                                     formattedDescription);
-    }
-}
+   $("#education").append(HTMLonlineClasses, HTMLschoolStart);
 
-displayWork();
+   education.onlineCourses.forEach(function (onlineCourse) {
 
+      var formattedOnlineTitle = HTMLonlineTitle.replace('%data%',
+                                                 onlineCourse.title);
 
-/******************************************************************************
-* Internationalise name function
-******************************************************************************/
-function inName(string) {
-    string = string.trim().split(" ");
-    console.log(string);
-    string[1] = string[1].toUpperCase();
+      var formattedOnlineSchool = HTMLonlineSchool.replace('%data%',
+                                                   onlineCourse.school);
 
-    return string[0] + " " + string[1];
+      var formattedOnlineTitleSchool = formattedOnlineTitle +
+                                      formattedOnlineSchool;
+
+      var formattedOnlineUrl = formattedOnlineTitleSchool.replace("#",
+                                                          onlineCourse.url);
+
+      var formattedOnlineCourseDates = HTMLonlineDates.replace('%data%',
+                                                       onlineCourse.dates);
+
+      $(".education-entry:last").append(formattedOnlineUrl,
+                                        formattedOnlineCourseDates);
+   });
 };
 
-$("#main").append(internationalizeButton);
+education.display();
 
+/******************************************************************************
+* Display function for Work
+******************************************************************************/
+work.display = function () {
+   if (work.jobs.length > 0) {
+      $('#workExperience').append(HTMLworkStart);
+      work.jobs.forEach(function(job) {
+
+         var formattedEmployer = HTMLworkEmployer.replace('%data%',
+                                                     job.employer);
+
+         var formattedTitle = HTMLworkTitle.replace('%data%',
+                                                   job.title);
+
+         var formattedEmployerTitle = formattedEmployer + formattedTitle;
+
+         var formattedDates = HTMLworkDates.replace('%data%',
+                                                    job.dates);
+
+         var formattedLocation = HTMLworkLocation.replace('%data%',
+                                                     job.location);
+
+         var formattedDescription = HTMLworkDescription.replace('%data%',
+                                                        job.description);
+
+         $('.work-entry:last').append(formattedEmployerTitle, formattedDates,
+                                      formattedLocation, formattedDescription);
+      });
+   }
+};
+
+work.display();
 
 /******************************************************************************
 * Display function for projects
 ******************************************************************************/
-function displayProjects() {
-    for (i in projects.project) {
-        $("#projects").append(HTMLprojectStart);
+projects.display = function () {
+   if (projects.projects.length > 0) {
+      $('#projects').append(HTMLprojectStart);
+      projects.projects.forEach(function (project) {
+         var formattedTitle = HTMLprojectTitle.replace('%data%',
+                                                      project.title);
+         var formattedDates = HTMLprojectDates.replace('%data%',
+                                                      project.dates);
+         var formattedDescription = HTMLprojectDescription.replace('%data%',
+                                                      project.description);
 
-        var formattedTitle = HTMLprojectTitle.replace("%data%",
-                              projects.project[i].title);
-        $(".project-entry:last").append(formattedTitle);
-
-        var formattedDates = HTMLprojectDates.replace("%data%",
-                              projects.project[i].dates);
-        var formattedDescription = HTMLprojectDescription.replace("%data%",
-                              projects.project[i].description);
-        var formattedImage = HTMLprojectImage.replace("%data%",
-                              projects.project[i].images);
-        $(".project-entry:last").append(formattedDates,
-                                        formattedDescription,
-                                        formattedImage);
-    }
+         if (project.images.length >0) {
+            $('#projects').append(HTMLprojectStart);
+            project.images.forEach(function (image) {
+                     var formattedImage = HTMLprojectImage.replace('%data%',
+                                                                   image);
+                     $('.project-entry:last').append(formattedImage);
+                  }
+               );
+         }
+        $(".project-entry:last").prepend(formattedTitle, formattedDates,
+                                         formattedDescription);
+      });
+   }
 };
 
-displayProjects();
+projects.display();
+
 /******************************************************************************
-* Display function for School
+* Internationalize name
 ******************************************************************************/
+function inName(name) {
+   name = name.trim().split(" ");
+   console.log(name);
+   name[1] = name[1].toUpperCase();
+   name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase();
 
-function displaySchools() {
-    for (i in education.schools) {
-        $("#education").append(HTMLschoolStart);
-        var formattedName = HTMLschoolName.replace("%data%",
-                              education.schools[i].name);
-        var formattedLocation = HTMLschoolLocation.replace("%data%",
-                              education.schools[i].location);
-        var formattedDates = HTMLschoolDates.replace("%data%",
-                              education.schools[i].dates);
-        var formattedMajor = HTMLschoolMajor.replace("%data%",
-                              education.schools[i].major);
-        $(".education-entry:last").append(formattedName,
-                                          formattedLocation,
-                                          formattedDates,
-                                          formattedMajor);
-    }
-};
+   return name[0] +" " + name[1];
+ }
 
-function displayOnlineSchools() {
-    for (i in education.schools) {
-      $("#education").append(HTMLschoolStart);
+ $('#main').append(internationalizeButton);
 
-        var formattedonlineTitle = HTMLonlineTitle.replace("%data%",
-                                    education.onlineCourses[i].title);
-        var formattedonlineSchool = HTMLonlineSchool.replace("%data%",
-                                    education.onlineCourses[i].school);
-        var formattedonlineDates = HTMLschoolDates.replace("%data%",
-                                    education.onlineCourses[i].dates);
-        var formattedonlineURL = HTMLonlineURL.replace("%data%",
-                                    education.onlineCourses[i].url);
-
-        $(".education-entry:last").append(formattedonlineSchool,
-                                          formattedonlineTitle,
-                                          formattedonlineDates,
-                                          formattedonlineURL);
-  }
-};
-
-displaySchools();
-
-$(".education-entry:last").append(HTMLonlineClasses);
-displayOnlineSchools();
-
-$("#mapDiv").append(googleMap);
+ /******************************************************************************
+ * Google Maps
+ ******************************************************************************/
+$('#mapDiv').append(googleMap);
