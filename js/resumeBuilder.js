@@ -60,7 +60,7 @@ var projects = {
             "title": "Simpsons Tapped Out",
             "dates": 2009,
             "description": "Manager",
-            "image": ["https://vignette.wikia.nocookie.net/simpsons/images/8/89/The_Simpsons_Tapped_Out.jpg/revision/latest/scale-to-width-down/350?cb=20150720220902"]
+            "image": ["https://vignette.wikia.nocookie.net/simpsons/images/8/89/The_Simpsons_Tapped_Out.jpg/revision/latest/scale-to-width-down/350?cb=20150720220902", "http://static.adweek.com/adweek.com-prod/wp-content/uploads/sites/2/2015/06/The-Simpsons-Tapped-Out-Tap-Ball.png"]
         },
 
     ]
@@ -95,7 +95,7 @@ if (bio.skills !== 0) {
 
 //LOOP
 work.display = function() {
-    for (job in work.jobs) {
+    for (var job in work.jobs) {
         $("#workExperience").append(HTMLworkStart);
         var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
         var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
@@ -122,7 +122,7 @@ function inName(nameThing) {
 // Internationalise name function -------//
 
 projects.display = function() {
-    for (proj in projects.projs) {
+    for (var proj in projects.projs) {
         $("#projects").append(HTMLprojectStart);
         $(".project-entry:last").append(HTMLprojectTitle.replace("%data%", projects.projs[proj].title));
         $(".project-entry:last").append(HTMLprojectDates.replace("%data%", projects.projs[proj].dates));
@@ -136,7 +136,7 @@ projects.display();
 
 
 education.display = function() {
-    for (school in education.schools) {
+    for (var school in education.schools) {
         $("#education").append(HTMLschoolStart);
         var formattedSchName = HTMLschoolName.replace("%data%", education.schools[school].name);
         var formattedSchDeg = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
@@ -147,15 +147,6 @@ education.display = function() {
         $(".education-entry:last").append(HTMLschoolMajor.replace("%data%", education.schools[school].majors[0]));
     }
 
-    for (onlineCourse in education.onlineCourses) {
-        $("#education").append(HTMLonlineClasses);
-        var formattedCrName = HTMLonlineTitle.replace("%data%", education.onlineCourses[onlineCourse].title);
-        var formattedCrSch = HTMLonlineSchool.replace("%data%", education.onlineCourses[onlineCourse].school);
-        var formattedCrNamsch = formattedCrName + formattedCrSch;
-        $(".education-entry:last").append(formattedCrNamsch);
-        $(".education-entry:last").append(HTMLonlineDates.replace("%data%", education.onlineClasses[onlineClass].dates));
-
-    }
 };
 
 education.display();
